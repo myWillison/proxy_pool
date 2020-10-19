@@ -54,7 +54,7 @@ def runScheduler():
 
     executors = {
         'default': {'type': 'threadpool', 'max_workers': 20},
-        'processpool': ProcessPoolExecutor(max_workers=5)
+        'processpool': ProcessPoolExecutor(max_workers=8)  # default 5
     }
     job_defaults = {
         'coalesce': False,
